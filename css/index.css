@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.logo {
+    font-size: 3rem ;
+    font-family: 'Pacifico', cursive;
+}
+div h2 {
+    font-size: x-large;
+    font-family: 'Pacifico', cursive; 
+}
+.carousel {
+    width:900px;
+    max-height: 700px;
+}
+article img {
+    min-width: 200px;
+    max-height: 300px;
+}
+a img {
+    max-width:  123px; 
+    height: 123px;
+}
