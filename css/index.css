@@ -1,11 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-.logo {
+:root {
+    font-family: 'Pacifico', cursive; 
+    color: #aa671d
+}
+header {
+    background-image: url(../img/texture.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: bottom;
+}
+header nav {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+header .menu a {
+    display: block;
+    color: #aa671d;
+    text-decoration: none;
+}
+header .menu a:hover {
+     color:rgb(20, 4, 4);
+}
+@media (min-width:575px) {
+    header .menu a {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+header .logo {
     font-size: 3rem ;
     font-family: 'Pacifico', cursive;
+    color: brown;
 }
-div h2 {
+header .purchase a {
+    color:#aa671d;
+    text-decoration: none;
+    }
+header .purchase a:hover {
+   color:rgb(20, 4, 4);
+}
+h2 {
     font-size: x-large;
     font-family: 'Pacifico', cursive; 
+    color:black
 }
 .carousel {
     width:900px;
