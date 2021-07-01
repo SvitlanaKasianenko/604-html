@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-        <link rel="icon" href="img/book.svg">  
+    <link rel="icon" href="img/book.svg">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">   
     <title>Bookstore</title>
@@ -28,118 +28,141 @@
         </nav>
     </header>
 </div>
-    
  <main>
-     <div class="title">
-            <h2>Наші бестселлери</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/ebook.jpg" class="d-block w-100" alt="E-book">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/reading-boy.jpg" class="d-block w-100" alt="Reading boy">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Дитяча література</h5>
+              <p>Створіть казкові спогади дитинсва для найдорожчих.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/heart-pages.jpg" class="d-block w-100" alt="Heart pages book">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Книги для дорослих</h5>
+              <p>Книги на будь-який вік і смак.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/ebook.jpg" class="d-block w-100" alt="E-reader">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Електронні версії.</h5>
+              <p>Бібліотека, що завжди з тобою.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Далі</span>
+        </button>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col h-100">
+          <div class="card">
+            <img src="img/golodni-igry.jpg" class="card-img-top" alt="Book cover golodni igry">
+            <div class="card-body">
+              <h5 class="card-title"> Голодні ігри, автор Сюзанна Коллінз</h5>
+              <p class="card-text">Голодні ігри» — роман американської письменниці Сюзанни Коллінз про шістнадцятирічну Катніс Евердін,
+                яка змушена брати участь у так званих Голодних іграх на виживання. Книжка була опублікована
+                видавництвом «Scholastic Press» у 2008 році.</p>
+            </div>
+            <div class="buttons">
+                <button>Переглянути</button>
+                <button>Придбати</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/dandelion-wine.jpg" class="card-img-top" alt="Book cover dandelion wine">
+            <div class="card-body">
+              <h5 class="card-title">Кульбабове вино, автор Рей Бредбері</h5>
+              <p class="card-text">Кульбабове вино» — роман Рея Бредбері, вперше виданий у 1957 році. «Кульбабове вино» — твір, який
+                вирізняється серед літературної творчості Рея Бредбері особистими переживаннями письменника. Це
+                багато в чому автобіографічна книга, події якої відбувається влітку 1928 року у вигаданому місті
+                Грін-Таун, штат Іллінойс.</p>
+            </div>
+            <div class="buttons">
+                <button>Переглянути</button>
+                <button>Придбати</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/the-hitchhiker's-guide-to-the-galaxy.jpg" class="card-img-top" alt="Book cover the-hitchhiker's-guide-to-the-galaxy">
+            <div class="card-body">
+              <h5 class="card-title">Путівник по Галактиці для космотуристів, автор Дуглас Адамс</h5>
+              <p class="card-text">Путівник по Галактиці для космотуристів» — гумористичний науково-фантастичний роман британського
+                письменника Дугласа Адамса. Перша частина серії «Путівник Галактикою».</p>
+            </div>
+            <div class="buttons">
+                <button>Переглянути</button>
+                <button>Придбати</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="img/chronicles.jpg" class="card-img-top" alt="Book cover The Chronicles of Narnia">
+              <div class="card-body">
+                <h5 class="card-title">Xроніки Нарнії, Клайв Стейплз Льюїс</h5>
+                <p class="card-text">Хроніки Нарнії» — цикл із семи дитячих фентезійних книг, написаних Клайвом Стейплзом Льюїсом. В них
+                  розповідається про пригоди дітей у казковій країні під назвою Нарнія, де тварини можуть говорити,
+                  магія нікого не дивує, а добро бореться зі злом.</p>
               </div>
-              <div class="carousel-item">
-                <img src="img/heart-pages.jpg" class="d-block w-100" alt="A book with a heart">
-              </div>
-              <div class="carousel-item">
-                <img src="img/reading-boy.jpg" class="d-block w-100" alt="A boy reading a book">
+              <div class="buttons">
+                  <button>Переглянути</button>
+                  <button>Придбати</button>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Назад</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Далі</span>
-            </button>
           </div>
-        <div class="products">
-            <h2 id="catalogue">Каталог</h2>
-              <article>
-                <img src="img/golodni-igry.jpg" alt="Book cover golodni_igry">
-                <h3> Голодні ігри, автор Сюзанна Коллінз</h3>
-                <p>«Голодні ігри» — роман американської письменниці Сюзанни Коллінз про шістнадцятирічну Катніс Евердін,
-                    яка змушена брати участь у так званих Голодних іграх на виживання. Книжка була опублікована
-                    видавництвом «Scholastic Press» у 2008 році.</p>
-                <div class="buttons">
-                    <button>Переглянути</button>
-                    <button>Придбати</button>
-                </div>
-            </article>
-            <article>
-                <img src="img/dandelion-wine.jpg" alt="Book cover dandelion wine">
-                <h3>Кульбабове вино, автор Рей Бредбері </h3>
-                <p>«Кульбабове вино» — роман Рея Бредбері, вперше виданий у 1957 році. «Кульбабове вино» — твір, який
-                    вирізняється серед літературної творчості Рея Бредбері особистими переживаннями письменника. Це
-                    багато в чому автобіографічна книга, події якої відбувається влітку 1928 року у вигаданому місті
-                    Грін-Таун, штат Іллінойс.</p>
-                <div class="buttons">
-                    <button>Переглянути</button>
-                    <button>Придбати</button>
-                </div>
-            </article>
-            <article>
-                <img src="img/the-hitchhiker's-guide-to-the-galaxy.jpg"
-                    alt="Book cover the-hitchhiker's-guide-to-the-galaxy">
-                <h3>Путівник по Галактиці для космотуристів, автор Дуглас Адамс </h3>
-                <p>«Путівник по Галактиці для космотуристів» — гумористичний науково-фантастичний роман британського
-                    письменника Дугласа Адамса. Перша частина серії «Путівник Галактикою».</p>
-                <div class="buttons">
-                    <button>Переглянути</button>
-                    <button>Придбати</button>
-                </div>
-            </article>
-            <article>
-                <img src="img/chronicles.jpg" alt="Book cover The Chronicles of Narnia">
-                <h3>Чроніки Нарнії, Клайв Стейплз Льюїс </h3>
-                <p>«Хроніки Нарнії» — цикл із семи дитячих фентезійних книг, написаних Клайвом Стейплзом Льюїсом. В них
-                    розповідається про пригоди дітей у казковій країні під назвою Нарнія, де тварини можуть говорити,
-                    магія нікого не дивує, а добро бореться зі злом.</p>
-                <div class="buttons">
-                    <button>Переглянути</button>
-                    <button>Придбати</button>
-                </div>
-            </article>
-            <article>
-                <img src="img/the-moomins.jpg" alt="Book cover The Moomins ">
-                <h3>Країна Мумі-Тролів,Туве Янссон. </h3>
-                <p>Долину мумі-тролів заселяють мумі-тролі, хропусі, мумрики, мудрики, гемулі, мюмлі, чепурулі з
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/the-moomins.jpg" class="card-img-top" alt="Book cover The Moomins">
+              <div class="card-body">
+                <h5 class="card-title">Країна Мумі-Тролів,Туве Янссон</h5>
+                <p class="card-text">Долину мумі-тролів заселяють мумі-тролі, хропусі, мумрики, мудрики, гемулі, мюмлі, чепурулі з
                     капарулями та інші істоти, наділені рисами і людей, і тварин. У них є «обличчя», і своїми
                     характерами, поведінкою, вчинками, звичаями і звичками ці персонажі надзвичайно схожі на людей: вони
                     бліднуть, червоніють, вибачаються, дякують, п'ють каву і сік, танцюють, сваряться. Але мешканці
-                    долини Мумі-тролів зовсім не люди — у багатьох з них є лапи та хвіст</p>
-                <div class="buttons">
-                    <button>Переглянути</button>
-                    <button>Придбати</button>
-                </div>
-            </article>
-            <article>
-                <img src="img/matilda.jpg" alt="Book cover Matilda">
-                <h3>Матильда,Роальд Дал </h3>
-                <p>У 2012 році «Матильда» посіла 30-те місце серед дитячих романів усіх часів за результатами
-                    опитування, опублікованого щомісячником «School Library Journal», що складається головним чином з
-                    аудиторії США. Це була перша з чотирьох книг Дала серед 100 Найкращих, що є більше, ніж в будь-якого
-                    іншого письменника.[5] Time (magazine) включив «Матильду» до свого списку 100 Найкращих Книг для
-                    Молоді Усіх Часів.[6] Світові продажі досягли 17 мільйонів, а з 2016 року продажі зросли до такої
-                    міри, що це перевершує інші роботи Дала.</p>
-                <div class="buttons">
-                    <button>Переглянути</button>
-                    <button>Придбати</button>
-                </div>
-            </article>
-            <article>
-                <img src="img/potter.jpg" alt="Book cover Harry Potter">
-                <h3>Гарі Поттер,Джоан Роулинг. </h3>
-                <p>Га́ррі Джеймс По́ттер — вигаданий персонаж і головний герой знаменитої серії романів англійської
+                    долини Мумі-тролів зовсім не люди — у багатьох з них є лапи та хвіст.</p>
+              </div>
+              <div class="buttons">
+                  <button>Переглянути</button>
+                  <button>Придбати</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/potter.jpg" class="card-img-top" alt="Book cover Harry Potter">
+              <div class="card-body">
+                <h5 class="card-title">Гарі Поттер,Джоан Роулинг</h5>
+                <p class="card-text">Га́ррі Джеймс По́ттер — вигаданий персонаж і головний герой знаменитої серії романів англійської
                     письменниці Джоан К. Ролінґ. Історія описує події у Школі Чарів і Чаклунства Гоґвортс, де його
-                    найкращими друзями є чарівники Рон Візлі і Герміона Ґрейнджер. </p>
-                <div class="buttons">
-                    <button>Переглянути</button>
-                    <button>Придбати</button>
-                </div>
-            </article>
-        </div>
+                    найкращими друзями є чарівники Рон Візлі і Герміона Ґрейнджер.</p>
+              </div>
+              <div class="buttons">
+                  <button>Переглянути</button>
+                  <button>Придбати</button>
+              </div>
+            </div>
+          </div>
+      </div>
     </main>
     <footer>
         <div class="title">
@@ -160,7 +183,8 @@
             <h2 id="payment-and-delivery">Чекаємо на Вас</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.0662193362964!2d23.985941900000004!3d49.8224206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a5de7a3573b88df!2sSoftServe%20HQ!5e0!3m2!1suk!2sua!4v1623071508216!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
