@@ -4,10 +4,6 @@
     color: #aa671d
 }
 header {
-    display: block;
-    padding: 10px;
-   }
-header {
     background-image: url(../img/texture.jpg);
     min-height: 180px;
     background-size: cover;
@@ -25,12 +21,6 @@ header .menu a {
 }
 header .menu a:hover {
      color:rgb(20, 4, 4);
-}
-@media (min-width:575px) {
-    header .menu a {
-        display: flex;
-        justify-content: space-around;
-    }
 }
 header .logo {
     font-size: 3rem ;
@@ -50,7 +40,7 @@ h2 {
     color:black
 }
 .carousel {
-    width:900px;
+    width:1200px;
     max-height: 700px;
 }
 article img {
