@@ -3,6 +3,9 @@
     font-family: 'Pacifico', cursive; 
     color: #aa671d
 }
+body {
+    background-color: rgb(219, 201, 201);
+}
 header {
     background-image: url(../img/texture.jpg);
     min-height: 180px;
@@ -23,7 +26,14 @@ header .menu a:hover {
      color:rgb(20, 4, 4);
 }
 header .logo {
-    font-size: 3rem ;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: brown;
+}
+h2 {
+    font: size 40px;;
+    text-align: center;
     font-family: 'Pacifico', cursive;
     color: brown;
 }
@@ -40,7 +50,8 @@ h2 {
     color:black
 }
 .carousel {
-    width:1200px;
+    display:flex;
+    min-width: none;
     max-height: 700px;
 }
 article img {
@@ -51,3 +62,8 @@ a img {
     max-width:  123px; 
     height: 123px;
 }
+.buttons {
+    display: flex;
+    justify-content: space-around;
+   }
+
